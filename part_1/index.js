@@ -28,3 +28,7 @@ span.log({ foo: "bar" });
 console.log("do stuff...");
 
 span.finish();
+
+const a = { a: 1 };
+const b = JSON.stringify({ ...a, b: 2 });
+module.exports = val => `The val: ${val}. And b ${b}`;
